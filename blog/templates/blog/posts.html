@@ -1,0 +1,10 @@
+{% extends 'blog/index.html' %}
+{% block content %}
+
+{% for post in posts %}
+<h1>{{ post.Title }}</h1>
+  {{ post.created_date }}
+ {{ post.text|safe }}
+{% endfor %}
+
+{% endblock %}
