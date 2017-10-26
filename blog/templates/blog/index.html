@@ -1,12 +1,26 @@
 {% load staticfiles %}
 <head>
+<link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Ubuntu" rel="stylesheet">
   <link rel='stylesheet', href='{% static 'blog/style.css'%}' />
   <title>#blerg</title>
 </head>
 
 <div class=header>
-<h1>#blerg</h1>
+ <a href='{% url 'index'%}'>
+ <h1 class=header>#blerg</h1></a>
+
+    <div class=linkbar>
+    <a href='https://github.com/urlybyrd'><img class="icon" src='{% static 'img/git.png'%}' /></a>
+    <a href='https://twitter.com/Earl_Goodfellow'><img class="icon" src='{% static 'img/twitter.png'%}' /></a>
+    <a href='{% url 'about' %}'><img class="icon" src='{% static 'img/about.png'%}' /></a>
+    </div>
+
+
 </div>
 
 {% block content %}
 {% endblock %}
+
+<div class=footer>
+  <a href="https://www/djangoproject.com/"><img src='{% static 'img/djangomade.gif'%}' style='float:right;' </a>
+</div>

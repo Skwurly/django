@@ -1,11 +1,71 @@
-*{
-  margin: 0; 
+ *{
+  margin: 0;
+}
+body{
+  background-color: #505050;
 }
 
 div.header{
   background-color: black;
 }
 
-h1{
-  color:red;
+div.linkbar{
+  right:10px;
+  position: absolute;
+  top: 5px;
+
+}
+
+img.icon{
+  width:37px;
+}
+
+h3{
+  font-family: 'Bowlby One SC', cursive;
+  font-weight: normal;
+}
+
+h1.header{
+  color:#c0ff33;
+  font-family: 'Bowlby One SC', cursive;
+  font-weight: normal;
+  height: 50px;
+}
+
+p{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+p.date{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  margin-left: 40px;
+
+}
+
+a{
+  text-decoration: none;
+  color: #000000;
+}
+a:hover{
+  color: #606060;
+}
+
+div.postcontainer{
+  margin:10px;
+  background-color: #ffffff;
+  border-radius: 10px;;
+}
+div.post{
+  margin:10px;
+}
+
+
+div.footer{
+  background-color: black;
+  width: 100%;
+  height: 30px;
+  position: fixed;
+  bottom: 0px;
 }
